@@ -1,0 +1,150 @@
+.App {
+    text-align: center;
+    overflow-x: hidden;
+    position: relative;
+    overflow: hidden;
+}
+
+.App* {
+    transition: none;
+    transform: none;
+}
+
+.MessageHoverImage {
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    align-self: center;
+    position: absolute;
+    bottom: 5%;
+    right: 2.5%;
+}
+
+.blue {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 2.5%;
+    bottom: 5%;
+    border-radius: 2rem;
+    height: 55px;
+    width: 140px;
+    animation-name: slider;
+    animation-duration: 1s;
+}
+
+
+
+.MessageImage {
+    display: block;
+    height: 55px;
+    width: 55px;
+    z-index: 2;
+    position: fixed;
+    right: 9%;
+    bottom: 5%;
+    border-radius: 2rem;
+    background-color: #7289da;
+    object-fit: cover;
+    animation-name: messageslider;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+    animation-timing-function: linear;
+}
+
+.Message {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-sizing: border-box;
+
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.Message:hover {
+    cursor: pointer;
+}
+
+.DiscordImage {
+    height: 55px;
+    width: 55px;
+    background-color: red;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.RightDiv {
+    width: 50px;
+    height: 50px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background-color: red;
+    position: absolute;
+
+}
+
+.HoverContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 30%;
+    width: 200px;
+    height: 90px;
+    background-color: green;
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+
+.messageHover {
+    background-color: purple;
+    color: white;
+    font-size: 1rem;
+}
+
+// .MessageHover {
+//     display: flex;
+//     height: 55px;
+//     width: 55px;
+//     position: fixed;
+//     bottom: 5%;
+//     right: 2.5%;
+//     z-index: 3;
+//     border-radius: 50%;
+//     background-color: #7289da;
+// }
+.Message::after {}
+
+.MessageHoverDiv:hover {
+    cursor: pointer;
+}
+
+@keyframes slider {
+    from {
+        transform: translateX(0%)
+    }
+
+    to {
+        transform: translateX(-1%)
+    }
+}
+
+@keyframes messageslider {
+    from {
+        transform: translateX(80%)
+    }
+
+    to {
+        transform: translateX(0%)
+    }
+}

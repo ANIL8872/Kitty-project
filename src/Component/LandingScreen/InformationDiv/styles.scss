@@ -1,0 +1,78 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.InformationDivContainer {
+    height: 240px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+    background-image: url('../../../assets/images/colortunnel.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 70%;
+}
+
+.InformationDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 130px;
+    width: 67%;
+    background-color: white;
+    border: .2rem solid #e7e6e4;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.OwnKittyContainer {
+    height: 55px;
+    width: 180px;
+    background-color: #c23da8;
+    border-bottom: 2px solid #c23da8;
+    border-radius: 0.3rem;
+}
+
+#OwnKitty {
+    height: 55px;
+    background-color: #ef52d1;
+    color: #ffffff;
+    width: 180px;
+    font-size: 1rem;
+    font-weight: 700;
+    border: 2px solid #c23da8;
+    border-radius: 0.3rem;
+}
+
+.ListContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.InfoDiv1 {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+    flex-direction: column;
+}
+
+.InfoDiv2 {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.Icons {
+    margin-right: 0.5rem;
+}
+
+.ListContainer>p {
+    font-size: 1rem;
+    font-weight: 600;
+}

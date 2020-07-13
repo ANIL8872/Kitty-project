@@ -1,0 +1,44 @@
+.CatalogueMenu {
+    display: flex;
+    flex-direction: column;
+    height: 172px;
+    width: 125px;
+    z-index: 9;
+    top: 20%;
+    right: 34%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #f1eee7;
+    box-shadow: 0 2px #e7e6e4;
+    animation-name: CatalogueMenuAnim;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+}
+
+.MenuContent {
+    display: flex;
+    width: 120px;
+    height: 42px;
+    border-bottom: 1px solid #e7e6e4;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #000110;
+}
+
+@keyframes CatalogueMenuAnim {
+    from {
+        transform: translateY(2%)
+    }
+
+    to {
+        transform: translateY(0%)
+    }
+}
+
+.MenuContent:hover,
+.CatalogueMenu:hover {
+    cursor: pointer;
+}

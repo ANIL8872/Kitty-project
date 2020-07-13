@@ -1,0 +1,73 @@
+.CryptoKittiesDetailsOuterContainer {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 30rem auto;
+    padding: 12rem 0;
+    background-color: #f3f1ee;
+    background-image: url('../../../assets/images/pattern-tile.svg');
+
+}
+
+.CryptoKittiesDetailsInnerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+    width: 75vw;
+    border: 2px solid white;
+    background-color: white;
+}
+
+.Discription {
+    margin-top: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: left;
+    color: #82817d;
+    margin-right: 1rem;
+    line-height: 2rem;
+}
+
+.Header {
+    font-size: 3rem;
+    text-align: left;
+    align-self: flex-start;
+}
+
+.KittyDiv {
+    &::after {
+        content: '';
+        position: absolute;
+        height: 25%;
+        width: 30%;
+        left: 35%;
+        top: 2%;
+        background-image: url('../../../assets/images/ether-diamond.gif');
+        background-position: 60% 80%;
+        background-repeat: no-repeat;
+        background-size: 80%;
+    }
+
+    position: relative;
+    height: 100%;
+    width: 30vw;
+    background-image: url('../../../assets/images/kitty-eth.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75% 75%;
+}
+
+.KittyDiscription {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 60vw;
+
+}

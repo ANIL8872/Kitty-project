@@ -1,0 +1,213 @@
+.CattributeScreenOuterContainer {
+    overflow: hidden;
+}
+
+.PloddingText {
+    color: #82817d;
+    margin-left: 0.6rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.MainContentDiv {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 5% 7%;
+}
+
+.FileShareText {
+    margin-top: 5%;
+}
+
+.LatestCattributes {
+    margin-top: 4%;
+    font-size: 2rem;
+    color: #2a2825;
+}
+
+
+
+.PurchaseText {
+    color: #575553;
+}
+
+.KittyNumberTag {
+    margin-top: 0.8rem;
+}
+
+.Line {
+    color: #82817d;
+    margin-top: -0.2rem;
+    letter-spacing: 0.1rem;
+}
+
+.BackToCatalogue {
+    color: #82817d;
+}
+
+.BackToCatalogue:hover {
+    cursor: pointer;
+}
+
+.Container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    overflow: hidden;
+    grid-column-gap: 4%;
+    overflow: visible;
+    grid-row-gap: 5%;
+    box-sizing: border-box;
+}
+
+.SuperText {
+    align-self: flex-start;
+    font-weight: 600;
+}
+
+.TagImage {
+    height: 13%;
+    width: 13%;
+    z-index: 4;
+}
+
+.KittyNumberText {
+    margin-top: 0.7rem;
+}
+
+.KittyImage {
+    width: 100%;
+    z-index: 5;
+}
+
+.Purrstige {
+    margin-top: 1%;
+    margin-bottom: 2%;
+    color: #82817d;
+}
+
+.Timer {
+    color: #49b749;
+}
+
+.Clock {
+    position: relative;
+    top: 30%;
+}
+
+.GenText {
+    color: #82817d;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin: 0.5rem 0.5rem;
+}
+
+.DefaultText {
+    font-size: 0.8rem;
+    margin: 0rem 0.2rem;
+    font-weight: 500;
+}
+
+.BuyDiv {
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    position: absolute;
+    top: 5%;
+    z-index: 4;
+    border-radius: 1rem;
+    background-color: #fff;
+    box-shadow: 0px 2px #82817d;
+    border: none;
+    transition: all 0.1s ease-in-out;
+}
+
+.DetailOuterContainer {
+    box-sizing: border-box;
+    // grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.DetailContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 320px;
+    align-items: center;
+    background-color: rgb(37, 118, 165);
+    flex-direction: column;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    position: relative;
+    transition: box-shadow 0.05s ease-in-out;
+}
+
+
+
+@media only screen and (max-width:1125px) {
+    .Container {
+        grid-template-columns: auto auto auto;
+    }
+
+
+}
+
+@media only screen and (max-width:815px) {
+    .Container {
+        grid-template-columns: auto auto;
+    }
+
+
+}
+
+@media only screen and (max-width:530px) {
+    .Container {
+        grid-template-columns: auto;
+    }
+
+
+}
+
+
+// .kitty:hover {
+//     height: 285px;
+//     width: 235px;
+// }
+.DetailContainer:hover {
+    box-shadow: 0.1px 0.1px 2px 2px rgb(37, 118, 165);
+    cursor: pointer;
+}
+
+.BuyDiv::before {
+    content: ' ';
+    border-color: transparent;
+    border-style: solid;
+    border-left-width: 5px;
+    position: absolute;
+    bottom: -22%;
+    right: 47%;
+    border-right-width: 5px;
+    border-top-width: 5px;
+    border-top-color: white;
+    z-index: 7;
+}
+
+.BuyDiv:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.DetailContainer::after {
+    position: absolute;
+    top: 66%;
+    left: -1.5%;
+    right: 0;
+    width: 53%;
+    height: 6.2%;
+    margin: auto;
+    background-color: rgb(139, 96, 96);
+    border-radius: 50%;
+    content: "";
+    z-index: 0;
+}

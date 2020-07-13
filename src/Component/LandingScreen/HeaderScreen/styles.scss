@@ -1,0 +1,24 @@
+.HeaderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 100vw;
+    background-color: white;
+    background-position: 50%;
+    border: .1rem solid #e7e6e4;
+}
+
+.HeaderText {
+    font-size: 0.8rem;
+    letter-spacing: .06rem;
+    font-weight: 500;
+}
+
+.Strongtext {
+    color: #e96bd4;
+}
+
+.Strongtext:hover {
+    cursor: pointer;
+}

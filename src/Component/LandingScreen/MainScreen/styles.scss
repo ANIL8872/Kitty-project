@@ -1,0 +1,157 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+@mixin bottom() {
+    bottom: 0%;
+}
+
+.Landing-fancies* {
+    transition: none;
+    transform: none;
+}
+
+.Landing-window {
+    position: absolute;
+    left: 10%;
+    top: 13%;
+    animation-name: LandingWindow;
+    animation-duration: 1s;
+}
+
+.Landing-fancies {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 300px;
+    width: 1000px;
+    position: relative;
+}
+
+.InformDiv {
+    height: 200px;
+    width: 100%;
+
+}
+
+.Landing-fancies-front {
+    position: relative;
+    height: 0;
+    width: 1000px;
+    object-fit: contain;
+    z-index: 3;
+    @include bottom();
+    animation-name: fade;
+    animation-duration: 0.5s;
+    height: 250px;
+}
+
+.Landing-fancies-mid {
+    position: absolute;
+    height: 250px;
+    width: 1000px;
+    object-fit: contain;
+    z-index: 2;
+    @include bottom();
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+.Landing-fancies-back {
+    position: absolute;
+    height: 250px;
+    width: 1000px;
+    object-fit: contain;
+    @include bottom();
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.image {
+    height: 240px;
+    width: 550px;
+    object-fit: cover;
+    background-color: #2A2825;
+}
+
+.OuterContainer {
+    height: 405px;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    box-sizing: border-box;
+    position: relative;
+    background-image: url('../../../assets/images/bgpattern.svg');
+    background-repeat: repeat-x;
+    background-size: 65% 0.5%;
+    background-position: top;
+}
+
+.Landing-stairs {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    animation-name: LandingStairAnim;
+    animation-duration: 1s;
+}
+
+.CryptoKittiesText-Landing-subheading-container {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+
+h1 {
+    font-size: 4.6rem;
+    margin: 0%;
+    color: #2A2825;
+    font-weight: 500;
+}
+
+.Landing-subheading {
+    font-size: 2rem;
+    color: #82817d;
+    font-weight: 400;
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
+
+@keyframes fade {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0%)
+    }
+}
+
+@keyframes LandingStairAnim {
+    from {
+        transform: translateX(100%)
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes LandingWindow {
+    from {
+        transform: translateY(100%)
+    }
+
+    to {
+        transform: translateY(0%)
+    }
+}
+
+// @keyframes .Landing-fancies-front:hover {
+
+//     cursor: pointer;
+// }
